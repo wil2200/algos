@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Diagnostics;
-using System.Security.Policy;
 
 namespace unionFind
 {
     internal class Program
     {
-        static int n = 40;
+        private static int n = 40;
 
         private static void Main(string[] args)
         {
@@ -15,9 +14,6 @@ namespace unionFind
             sw.Start();
             RunUnion1();
             sw.Stop();
-
-
-         
 
             sw2.Start();
             RunUnion2();
@@ -49,10 +45,8 @@ namespace unionFind
                 Console.WriteLine($"Now have {uf.ComponentCount()} components");
 
                 uf.PrintSiteInfo();
-
             }
         }
-
 
         public static void RunUnion2()
         {
